@@ -27,5 +27,4 @@ ip_template = '''
      '''
 print(ip_template.format(int(list_ip[0]), int(list_ip[1]), int(list_ip[2]), int(list_ip[3])))
 #print('{:10} {:10} {:10} {:10}'.format(list_ip[0], list_ip[1],list_ip[2],list_ip[3]))
-#print('{0:8b} {1:8b} {2:8b} {3:8b}'.format(list_ip[0], list_ip[1],list_ip[2],list_ip[3]))
 #print('{:10} {:10} {:10} {:10}'.format(bin(int(list_ip[0])), bin(int(list_ip[1])),bin(int(list_ip[2])),bin(int(list_ip[3]))))
