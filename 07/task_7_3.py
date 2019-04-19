@@ -19,8 +19,6 @@
 
 '''
 
-is_ignored = False
-
 from sys import argv
 #file_read = str(argv)
 file_read = 'CAM_table.txt'

@@ -17,8 +17,7 @@ ignore = ['duplex', 'alias', 'Current configuration']
 is_ignored = False
 from sys import argv
 file_read = argv[1]
-file_write = open(argv[2],'a')
-#file_write = open('config_sw1_cleared.txt','a')
+file_write = open('config_sw1_cleared.txt','a')
 #file_read = 'config_sw1.txt'
 with open(file_read) as file:
     for line in file:

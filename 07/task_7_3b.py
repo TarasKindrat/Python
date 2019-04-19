@@ -12,7 +12,6 @@
 
 '''
 
-is_ignored = False
 sort_dict = {}
 vlan_list = []
 new_list = []
