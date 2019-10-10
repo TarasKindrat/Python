@@ -1,7 +1,7 @@
 ###*** Very simple address book with wrtiting information to file ***###
 
 import pickle
-# Class for like objeckt for person attributes
+# Class like objeckt for person attributes
 class PersonCard:
     def __init__(self, secondname, phone, emailaddress):
         self.__secondname = secondname
