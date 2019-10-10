@@ -9,7 +9,7 @@ class PersonCard:
         self.__emailaddress = emailaddress
 # Define str method to return strings of propertys
     def __str__(self):
-        return "\t Secondname: {} Phone: {} Emmail: {}".format(self.__secondname, self.__phone, self.__emailaddress)
+        return "\t Secondname: {}      Phone: {}      Emmail: {}".format(self.__secondname, self.__phone, self.__emailaddress)
 
 # Create empty dictionary
 addresBook = {}
@@ -55,13 +55,13 @@ def newContacs ():
             elif len(list) == 4:
                 addContact(list[0], list[1], list[2], list[3])
             else:
-                print("Empty or overfull entry, please retry ")
+                print("Empty or overfull entry, please retry \n")
         else:
-            print("You are entered empty line, please retry")
+            print("You are entered empty line, please retry \n")
 # Search contact by name
 def findContact (name):
     addresBook = getAddresFromFile()
-    print(addresBook.get(name, "There is no this contact at the book"))
+    print(addresBook.get(name, "There is no this contact at the book \n"))
 
 # For endless main loop
 running = True
@@ -73,10 +73,10 @@ while running:
     if enter == '1':
         newContacs()
     elif enter == '2':
-        nameContact = input("Enter name ")
+        nameContact = input("Enter name \n")
         findContact(nameContact)
     elif enter == '3':
         running = False
     else:
-        print("Wrong enter, please reapid again!")
+        print("Wrong enter, please reapid again! \n")
 else:print("End of programm, by ...")
