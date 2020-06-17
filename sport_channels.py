@@ -14,7 +14,7 @@ NEXT_N_DAYS_TIME = str((datetime.now() + timedelta(days=NEXT_DAYS)).timestamp())
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
              'Chrome/79.0.3945.88 Safari/537.36'
 HEADER_REFER = 'https://supersport.com/tv-guide'
-REQUEST_REEFER = 'https://supersport.com/api/videos/tv-guide'
+REQUEST_REEFER = 'https://s'
 # Create header for request, without header answer will be : 404
 HEADER = {'accept': 'application/json', 'accept-encoding': 'gzip, deflate, br', 'referer': HEADER_REFER,
           'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'user-agent': USER_AGENT,
