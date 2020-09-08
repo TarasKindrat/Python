@@ -39,6 +39,6 @@ time.sleep(5)
 # "Content-Length": "832",
 # "Origin": "http://192.168.11.86",
 # "Connection": "keep-alive",
-# "Referer": "http://192.168.54.86/pdir.htm",
+# "Referer": "http://192.168.11.86/pdir.htm",
 # "Upgrade-Insecure-Requests": 1
 # }
