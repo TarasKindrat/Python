@@ -106,21 +106,6 @@ for file in onlyfiles:
         #         fp.write(part.get_payload(decode=True))
 
 
-
-
-
-
-
-
-    # msg = message_from_binary_file(open(filename, mode="rb"),
-    #                                    policy=policy.default)
-        #print(str(msg2))
-    # print(FILE.read())
-    # Get user's names and phone numbers
-    #list_users_number = [x.strip() for x in FILE]
-    #print(list_users_number)
-
-
 # import mailparser
 #
 # # mail = mailparser.parse_from_file(email_letter)
