@@ -26,8 +26,8 @@ requests_get = requests.get(HOST_GET).text
 
 # Get contacts from some phone
 list_contacts = re.findall(r'"(n=\w.+?;p=\w.+?)"', requests_get)
-print(len(list_contacts))
-print(list_contacts)
+print("Length of contacts", len(list_contacts))
+print("Contacts:", list_contacts)
 
 
 # Get names of field where put data : "28526": "n=Melnyk Igor;p=90964165589" where name = "28526"
@@ -37,9 +37,9 @@ response_fields_names = requests.get(FORM_URL).text
 #list_fields_names = re.findall(r'"(\d{5})"', response_fields_names)
 list_fields_names = re.findall(r'name="(\d{3,5})"', response_fields_names)
 list_fields_names.sort()
-print(len(list_fields_names))
+print("Length of list with fieleds names", len(list_fields_names))
+print("Fieleds names:", list_fields_names)
 
-print(list_fields_names)
 data_dict = dict()
 # Create dict for sending to request
 if len(list_fields_names) >= len(list_contacts):
@@ -47,7 +47,7 @@ if len(list_fields_names) >= len(list_contacts):
 
 
 print("Data dict:")
-print(data_dict)
+print("Dictionary with data to write", data_dict)
 requests_put = requests.post(POST_URL, data=data_dict)
 print(f"Status {requests_put}")
 print(f"Status code {requests_put.status_code}")
