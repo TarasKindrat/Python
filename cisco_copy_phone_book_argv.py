@@ -7,7 +7,7 @@ import sys
 
 # HOST_GET = 'http://192.168.54.60:81/pdir.htm' # Phone with phonebook
 # HOST_POST = '192.168.54.71:81' # Where should be written phonebook
-HOST_GET = sys.argv[1]
+HOST_GET = f'http://{sys.argv[1]}/pdir.htm'
 HOST_POST = sys.argv[2]
 ACTION = sys.argv[3]
 
