@@ -26,8 +26,8 @@ requests_get = requests.get(HOST_GET).text
 
 # Get contacts from some phone
 list_contacts = re.findall(r'"(n=\w.+?;p=\w.+?)"', requests_get)
-# print(len(list_contacts))
-# print(list_contacts)
+print(len(list_contacts))
+print(list_contacts)
 
 
 # Get names of field where put data : "28526": "n=Melnyk Igor;p=90964165589" where name = "28526"
