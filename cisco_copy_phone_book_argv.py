@@ -32,7 +32,7 @@ print(list_contacts)
 
 # Get names of field where put data : "28526": "n=Melnyk Igor;p=90964165589" where name = "28526"
 response_fields_names = requests.get(FORM_URL).text
-print(response_fields_names)
+#print(response_fields_names)
 
 #list_fields_names = re.findall(r'"(\d{5})"', response_fields_names)
 list_fields_names = re.findall(r'name="(\d{3,5})"', response_fields_names)
